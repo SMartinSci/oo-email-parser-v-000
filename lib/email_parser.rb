@@ -19,6 +19,6 @@ class EmailParser
   def parse
     emails.split(/,\s/) do |entry|
     entry.collect
+    end
   end
-end
 end
