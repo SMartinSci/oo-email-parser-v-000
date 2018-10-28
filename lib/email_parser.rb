@@ -10,9 +10,14 @@ class EmailParser
      @emails = email
   end
   
+  # def parse
+  #    emails.split.map do |email|
+  #     email.split(',')
+  #   end.flatten.uniq
+  # end
+
   def parse
-     emails.split.map do |email|
-      email.split(',')
-    end.flatten.uniq
+    emails.split(/,\s/) do |entry|
+    entry.collect
   end
 end
