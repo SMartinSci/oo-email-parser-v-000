@@ -21,3 +21,4 @@ class EmailParser
     entry.collect
   end
 end
+end
